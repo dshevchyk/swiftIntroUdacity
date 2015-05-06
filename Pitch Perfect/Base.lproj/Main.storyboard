@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="948" y="-463"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="L0N-hi-DvC">
             <objects>
-                <viewController id="X0A-oA-OaI" sceneMemberID="viewController">
+                <viewController id="X0A-oA-OaI" customClass="PlaySoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kbb-bl-qML"/>
                         <viewControllerLayoutGuide type="bottom" id="vQJ-d6-nDu"/>
@@ -75,8 +75,22 @@
                     <view key="view" contentMode="scaleToFill" id="YRq-sm-yT5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPJ-wY-hyc">
+                                <rect key="frame" x="16" y="72" width="100" height="100"/>
+                                <state key="normal" image="slow">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playSlow:" destination="X0A-oA-OaI" eventType="touchUpInside" id="xic-ZD-4vY"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="slowButton" destination="bPJ-wY-hyc" id="OyE-3R-KW0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JaD-D6-dvK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,6 +117,7 @@
     </scenes>
     <resources>
         <image name="microphone" width="100" height="100"/>
+        <image name="slow" width="100" height="100"/>
         <image name="stop" width="50" height="50"/>
     </resources>
 </document>
