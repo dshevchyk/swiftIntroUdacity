@@ -93,7 +93,6 @@
                                 </state>
                                 <connections>
                                     <action selector="playFast:" destination="X0A-oA-OaI" eventType="touchUpInside" id="hjO-qK-xz5"/>
-                                    <action selector="playSlow:" destination="X0A-oA-OaI" eventType="touchUpInside" id="fcT-j0-uVV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpc-y1-k5U">

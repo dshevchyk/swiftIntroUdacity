@@ -29,6 +29,7 @@ class PlaySoundsViewController: UIViewController {
     func playMySound(slow: Bool) {
         stopButton.hidden = false
         beepPlayer.stop()
+        beepPlayer.currentTime = 0.0
         if slow {
             beepPlayer.rate = 0.5
         } else {
