@@ -12,25 +12,43 @@ import AVFoundation
 class PlaySoundsViewController: UIViewController {
 
     @IBOutlet weak var slowButton: UIButton!
+    @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var fastButton: UIButton!
     
     var alertSlowSound: NSURL?
-    
+    var beepPlayer: AVAudioPlayer!
     override func viewDidLoad() {
         super.viewDidLoad()
         alertSlowSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3")!)!
         println(alertSlowSound)
+        stopButton.hidden = true
+        beepPlayer = AVAudioPlayer(contentsOfURL: alertSlowSound, error: nil)
+        beepPlayer.enableRate = true
         // Do any additional setup after loading the view.
     }
-    func playMySound(beepSoundURL: NSURL) {
-        
-        var beepPlayer = AVAudioPlayer(contentsOfURL: beepSoundURL, error: nil)
+    func playMySound(slow: Bool) {
+        stopButton.hidden = false
+        if slow {
+            beepPlayer.rate = 0.5
+        } else {
+            
+            beepPlayer.rate = 2.0
+        }
+        beepPlayer.stop()
         beepPlayer.prepareToPlay()
         beepPlayer.play()
     }
     @IBAction func playSlow(sender: UIButton) {
-        playMySound(alertSlowSound!)
+        playMySound(true)
     }
     
+    @IBAction func playFast(sender: UIButton) {
+        playMySound(false)
+    }
+    @IBAction func spotPlaying(sender: UIButton) {
+        stopButton.hidden = true
+        beepPlayer.stop()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

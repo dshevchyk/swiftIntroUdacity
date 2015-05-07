@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>8E78FD4A-524B-4537-9AA3-2FE62EFF3B4A</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Pitch Perfect</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B8708C4DD7DFB327FC1A0B8AF8D5330A9B02D6BE</key>
 		<string>https://github.com/dshevchyk/swiftIntroUdacity.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Pitch Perfect.xcodeproj/project.xcworkspace</string>
+	<string>Pitch Perfect.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B8708C4DD7DFB327FC1A0B8AF8D5330A9B02D6BE</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>B8708C4DD7DFB327FC1A0B8AF8D5330A9B02D6BE</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Pitch%20Perfect</string>
+			<string>swiftIntroUdacity</string>
 		</dict>
 	</array>
 </dict>
