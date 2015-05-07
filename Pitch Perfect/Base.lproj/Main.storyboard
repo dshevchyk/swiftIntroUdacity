@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="42G-rX-vqO">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -99,9 +98,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpc-y1-k5U">
                                 <rect key="frame" x="275" y="542" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Fpc-y1-k5U" secondAttribute="height" multiplier="1:1" id="Tnp-yy-ZnI"/>
-                                </constraints>
                                 <state key="normal" image="stop">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -114,12 +110,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="VU9-XN-vLU" firstAttribute="trailing" secondItem="YRq-sm-yT5" secondAttribute="trailingMargin" id="GRt-F5-MXf"/>
-                            <constraint firstAttribute="centerX" secondItem="Fpc-y1-k5U" secondAttribute="centerX" id="MNk-ro-U59"/>
+                            <constraint firstItem="vQJ-d6-nDu" firstAttribute="top" secondItem="Fpc-y1-k5U" secondAttribute="bottom" constant="8" id="Ja7-QS-Q1k"/>
+                            <constraint firstAttribute="centerX" secondItem="Fpc-y1-k5U" secondAttribute="centerX" id="Kuo-Dp-uyW"/>
                             <constraint firstItem="VU9-XN-vLU" firstAttribute="top" secondItem="kbb-bl-qML" secondAttribute="bottom" constant="8" id="MQ5-wR-Rng"/>
-                            <constraint firstItem="vQJ-d6-nDu" firstAttribute="top" secondItem="Fpc-y1-k5U" secondAttribute="bottom" constant="8" id="Ohy-xJ-JmO"/>
                             <constraint firstItem="bPJ-wY-hyc" firstAttribute="top" secondItem="kbb-bl-qML" secondAttribute="bottom" constant="8" id="cgw-eH-FyM"/>
                             <constraint firstItem="bPJ-wY-hyc" firstAttribute="leading" secondItem="YRq-sm-yT5" secondAttribute="leadingMargin" id="fet-db-Vik"/>
-                            <constraint firstAttribute="centerY" secondItem="Fpc-y1-k5U" secondAttribute="centerY" constant="-267" id="hYm-Kf-O0B"/>
                         </constraints>
                     </view>
                     <connections>
